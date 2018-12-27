@@ -157,7 +157,7 @@ def refresh_menu_screen():
         time_font=pygame.font.Font(None,100)
         time_label = time_font.render(current_time, 1, (cyan))
 
-	font=pygame.font.Font(None,50)
+	font=pygame.font.Font(None,30)
 	station_font=pygame.font.Font(None,40)
         skin=pygame.image.load("skin.png")
 	skin = pygame.transform.scale(skin, (width, height))
@@ -166,6 +166,7 @@ def refresh_menu_screen():
 	label2=font.render("Internet Radio", 1, (cyan))
 	#draw the main elements on the screen
 	image=pygame.image.load(album_img)
+	image = pygame.transform.scale(image, (20, 20))
         screen.blit(skin,(0,0))
         screen.blit(image,(25,90))
         #screen.blit(label,(520, 105))
