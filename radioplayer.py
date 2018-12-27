@@ -273,6 +273,8 @@ height = root.winfo_screenheight()
 
 size = width, height
 
+print width, "X", height
+
 screen = pygame.display.set_mode((size),pygame.FULLSCREEN)
 #station_name()
 refresh_menu_screen()  #refresh the menu interface 
