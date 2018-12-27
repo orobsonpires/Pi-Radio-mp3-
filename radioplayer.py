@@ -166,7 +166,7 @@ def refresh_menu_screen():
 	label2=font.render("Internet Radio", 1, (cyan))
 	#draw the main elements on the screen
 	image=pygame.image.load(album_img)
-	image = pygame.transform.scale(image, (20, 20))
+	image = pygame.transform.scale(image, (80, 80))
         screen.blit(skin,(0,0))
         screen.blit(image,(25,90))
         #screen.blit(label,(520, 105))
