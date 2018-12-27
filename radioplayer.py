@@ -12,6 +12,7 @@ import subprocess
 import os
 import glob
 import random
+import Tkinter
 
 pygame.init()
 
@@ -264,7 +265,14 @@ def main():
 #################### EVERTHING HAS NOW BEEN DEFINED ###########################
 
 #set size of the screen
-size = width, height = 640, 480
+#size = width, height = 640, 480
+root = Tkinter.Tk()
+
+width = root.winfo_screenwidth()
+height = root.winfo_screenheight()
+
+size = width, height
+
 screen = pygame.display.set_mode((size),pygame.FULLSCREEN)
 #station_name()
 refresh_menu_screen()  #refresh the menu interface 
