@@ -160,6 +160,7 @@ def refresh_menu_screen():
 	font=pygame.font.Font(None,50)
 	station_font=pygame.font.Font(None,40)
         skin=pygame.image.load("skin.png")
+	skin = pygame.transform.scale(skin, (width, height))
 	indicator_on=font.render("[        ]", 1, (blue))
         indicator_off=font.render("", 1, (white))
 	label2=font.render("Internet Radio", 1, (cyan))
